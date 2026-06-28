@@ -8,6 +8,8 @@
 [![Warning](https://img.shields.io/badge/Warning-Educational%20Only-f6c177?style=for-the-badge&labelColor=f6c177)](https://hypersecurityoffseclabs.great-site.net)
 [![_Port_Scanning](https://img.shields.io/badge/_Port_Scanning-7_Scan_Types-9ccfd8?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=9ccfd8)](https://hypersecurityoffseclabs.great-site.net)
 
+> **⚠️ DANGER:** HSOL is not responsible for any kind of activities performed by users.
+
 IronWire is a raw TCP packet crafting and network stress testing framework built in Rust. Operating at Layer 2 via AF_PACKET, it bypasses the kernel TCP stack to give full control over flags, sequence numbers, options, and source addresses. Designed for adversarial simulations — port scanning, SYN flooding, TCP reflection, amplification analysis, and full 3-way handshake floods — with an adaptive bypass engine that self-tunes based on real-time packet loss. Linux only, root required.
 
 **Version:** 4.5.0
