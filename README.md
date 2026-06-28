@@ -80,6 +80,11 @@ The adaptive monitor uses a sliding window to track packet loss:
 
 ---
 
+[![Stars](https://img.shields.io/github/stars/HyperSecurityLabs/ironwire?style=for-the-badge&logo=github&logoColor=000&labelColor=eb6f92&color=eb6f92)](https://github.com/HyperSecurityLabs/ironwire) [![Forks](https://img.shields.io/github/forks/HyperSecurityLabs/ironwire?style=for-the-badge&logo=github&logoColor=000&labelColor=31748f&color=31748f)](https://github.com/HyperSecurityLabs/ironwire)
+
+⭐ Star if you find this useful.  
+💀 If not — see you on the other side.
+
 ## OPSEC
 
 - Random source IPs must be routable on your network to trigger responses
