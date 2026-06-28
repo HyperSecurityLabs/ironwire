@@ -6,18 +6,17 @@
 [![Portal](https://img.shields.io/badge/Portal-HSOL-2d6a4f?style=for-the-badge&logo=google-chrome&logoColor=000&labelColor=2d6a4f)](https://hypersecurityoffseclabs.great-site.net) 
 [![Telegram](https://img.shields.io/badge/Telegram-Join-c4a7e7?style=for-the-badge&logo=telegram&logoColor=000&labelColor=c4a7e7)](https://t.me/hypersecurity_offsec)
 [![Warning](https://img.shields.io/badge/Warning-Educational%20Only-f6c177?style=for-the-badge&labelColor=f6c177)](https://hypersecurityoffseclabs.great-site.net)
-
----
+[![_Port_Scanning](https://img.shields.io/badge/_Port_Scanning-7_Scan_Types-9ccfd8?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=9ccfd8)](https://hypersecurityoffseclabs.great-site.net)
 
 IronWire is a raw TCP packet crafting and network stress testing framework built in Rust. Operating at Layer 2 via AF_PACKET, it bypasses the kernel TCP stack to give full control over flags, sequence numbers, options, and source addresses. Designed for adversarial simulations — port scanning, SYN flooding, TCP reflection, amplification analysis, and full 3-way handshake floods — with an adaptive bypass engine that self-tunes based on real-time packet loss. Linux only, root required.
 
 **Version:** 4.5.0
 **Author:** khaninkali · HyperSecurity Offensive Labs
 
+---
 
-[![_Capabilities](https://img.shields.io/badge/_Capabilities-Attack_Vectors-eb6f92?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=232136)](https://hypersecurityoffseclabs.great-site.net)
+[![_Capabilities](https://img.shields.io/badge/_Capabilities-Attack_Vectors-eb6f92?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=eb6f92)](https://hypersecurityoffseclabs.great-site.net)
 
-[![_Port_Scanning](https://img.shields.io/badge/_Port_Scanning-7_Scan_Types-9ccfd8?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=26233a)](https://hypersecurityoffseclabs.great-site.net)
 
 | Type | Flags | Evasion |
 |---|---|---|
@@ -29,22 +28,22 @@ IronWire is a raw TCP packet crafting and network stress testing framework built
 | NULL | 0 flags | **Most evasive** — no flags to match |
 | RST | RST | Useful for killing existing connections |
 
-[![_SYN_Flood](https://img.shields.io/badge/_SYN_Flood-Resource_Exhaustion-31748f?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=232136)](https://hypersecurityoffseclabs.great-site.net)
+[![_SYN_Flood](https://img.shields.io/badge/_SYN_Flood-Resource_Exhaustion-31748f?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=31748f)](https://hypersecurityoffseclabs.great-site.net)
 - Random source IP (evades per-IP rate limiting)
 - Random source port (evades per-port limiting)
 - Random TCP options (evades signature-based detection)
 - Burst control with adaptive delay
 
-[![_TCP_Reflection](https://img.shields.io/badge/_TCP_Reflection-Victim_Spoofing-c4a7e7?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=26233a)](https://hypersecurityoffseclabs.great-site.net)
+[![_TCP_Reflection](https://img.shields.io/badge/_TCP_Reflection-Victim_Spoofing-c4a7e7?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=c4a7e7)](https://hypersecurityoffseclabs.great-site.net)
 Sends SYN with spoofed source IP = victim. Each reflector responds with SYN-ACK to the victim, hiding the attacker origin.
 
-[![_TCP_Amplification](https://img.shields.io/badge/_TCP_Amplification-Factor_Discovery-ebbcba?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=232136)](https://hypersecurityoffseclabs.great-site.net)
+[![_TCP_Amplification](https://img.shields.io/badge/_TCP_Amplification-Factor_Discovery-ebbcba?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=ebbcba)](https://hypersecurityoffseclabs.great-site.net)
 Tracks sent vs received bytes per service to calculate amplification factor. Typical TCP factors: 1.3x–1.5x.
 
-[![_ACK_Reflection](https://img.shields.io/badge/_ACK_Reflection-RST_Flood-f6c177?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=26233a)](https://hypersecurityoffseclabs.great-site.net)
+[![_ACK_Reflection](https://img.shields.io/badge/_ACK_Reflection-RST_Flood-f6c177?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=f6c177)](https://hypersecurityoffseclabs.great-site.net)
 Sends ACK packets with spoofed victim source to reflectors. ACK packets often pass through firewall ACLs — stateful firewalls expect ACKs on established connections.
 
-[![_Handshake_Flood](https://img.shields.io/badge/_Handshake_Flood-Connection_Exhaustion-908caa?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=232136)](https://hypersecurityoffseclabs.great-site.net)
+[![_Handshake_Flood](https://img.shields.io/badge/_Handshake_Flood-Connection_Exhaustion-908caa?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=908caa)](https://hypersecurityoffseclabs.great-site.net)
 Completes full TCP handshake (SYN → SYN-ACK → ACK), sends keep-alive data, holds connections open until FIN teardown. Kernel RST suppression via iptables.
 
 ---
