@@ -85,6 +85,12 @@ The adaptive monitor uses a sliding window to track packet loss:
 ⭐ Star if you find this useful.  
 💀 If not — see you on the other side.
 
+> **To the doubters:** We do not rely on AI much. Every packet crafted, every bypass tuned, every ARP resolved — written line by line, fixed bug by bug.  
+>  
+> AI can generate code that *looks* plausible. It cannot design a raw TCP state machine, debug `AF_PACKET` send ring stalls, or reverse engineer gateway behavior.  
+>  
+> HyperSecurity runs on **raw kernel knowledge** and logic — not prompts. Human-written and AI-written code are not the same depth. Those who think otherwise haven't written enough themselves.
+
 ## OPSEC
 
 - Random source IPs must be routable on your network to trigger responses
