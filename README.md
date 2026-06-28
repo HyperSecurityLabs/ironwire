@@ -72,37 +72,6 @@ The adaptive monitor uses a sliding window to track packet loss:
 
 ---
 
-## CLI Reference
-
-```
-ironwire --target <IP> --ports <PORTS> [OPTIONS]
-ironwire --servers servers.txt [OPTIONS]
-```
-
-| Flag | Default | Description |
-|---|---|---|
-| `-t, --target` | — | Target IP address |
-| `-p, --ports` | common | Ports: range (1-1000), list (80,443), common |
-| `-c, --connections` | 50 | Connection burst size |
-| `-d, --duration` | 120s | Test duration |
-| `-a, --attack-type` | scan | scan / flood / reflect / amplify / ack-reflect / handshake / comprehensive |
-| `--scan-type` | syn | syn / connect / ack / fin / xmas / null / rst |
-| `-g, --aggression` | 3 | 1 (slow) to 5 (max) |
-| `--source-variation` | true | Randomize source IP |
-| `--random-ports` | true | Randomize source port |
-| `--random-options` | true | Randomize TCP options |
-| `--profile` | adaptive | silent / adaptive / aggressive |
-| `--auto-interface` | true | Auto-select best interface |
-| `--target-mac` | — | Manual target MAC override |
-| `--interface` | — | Network interface (auto-detected) |
-| `--victim` | — | Victim IP for reflection/amplification |
-| `--reflector-port` | 80 | Reflector port |
-| `--amp` | 80,443,22,8080 | Amplifier ports |
-| `--servers` | — | Path to servers.txt |
-| `--hto` | 5s | Handshake timeout |
-
----
-
 ## Requirements
 
 - **Linux** (raw sockets via AF_PACKET)
