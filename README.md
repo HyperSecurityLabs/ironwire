@@ -35,15 +35,19 @@ IronWire is a raw TCP packet crafting and network stress testing framework built
 - Burst control with adaptive delay
 
 [![_TCP_Reflection](https://img.shields.io/badge/_TCP_Reflection-Victim_Spoofing-c4a7e7?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=c4a7e7)](https://hypersecurityoffseclabs.great-site.net)
+
 Sends SYN with spoofed source IP = victim. Each reflector responds with SYN-ACK to the victim, hiding the attacker origin.
 
 [![_TCP_Amplification](https://img.shields.io/badge/_TCP_Amplification-Factor_Discovery-ebbcba?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=ebbcba)](https://hypersecurityoffseclabs.great-site.net)
+
 Tracks sent vs received bytes per service to calculate amplification factor. Typical TCP factors: 1.3x–1.5x.
 
 [![_ACK_Reflection](https://img.shields.io/badge/_ACK_Reflection-RST_Flood-f6c177?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=f6c177)](https://hypersecurityoffseclabs.great-site.net)
+
 Sends ACK packets with spoofed victim source to reflectors. ACK packets often pass through firewall ACLs — stateful firewalls expect ACKs on established connections.
 
 [![_Handshake_Flood](https://img.shields.io/badge/_Handshake_Flood-Connection_Exhaustion-908caa?style=for-the-badge&logo=terminal&logoColor=ffffff&labelColor=908caa)](https://hypersecurityoffseclabs.great-site.net)
+
 Completes full TCP handshake (SYN → SYN-ACK → ACK), sends keep-alive data, holds connections open until FIN teardown. Kernel RST suppression via iptables.
 
 ---
